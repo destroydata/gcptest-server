@@ -13,7 +13,7 @@ jobs:
     - name: print
       run: echo ${{env.DOCKER.env.hi}}
     - name: print
-      run: echo ${{DOCKER.secrets.REPOSITORY}}
+      run: echo ${{vars.DOCKER.secrets.REPOSITORY}}
     - name: print
-      run: echo ${{DOCKER.env.hi}}
+      run: echo ${{vars.DOCKER.env.hi}}
     
