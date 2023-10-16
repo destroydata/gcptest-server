@@ -40,7 +40,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Build the Docker image
-      run: docker build -t  ${{ env.secrets.DOCKER.USERNAME }}/${{ env.secrets.DOCKER.REPOSITORY}} . 
+      run: docker build -t  ${{ vars.secrets.DOCKER.USERNAME }}/${{ vars.secrets.DOCKER.REPOSITORY}} . 
 
 
 
