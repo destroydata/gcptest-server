@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: print
-      run: echo ${{env.secrets.DOCKER.USERNAME}}
+      run: echo ${{env.DOCKER.secrets.USERNAME}}
     - name: print
-      run: echo ${{env.secrets.USERNAME.DOCKER}}
+      run: echo ${{env.secrets.DOCKER.PASSWORD}}
     
