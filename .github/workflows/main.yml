@@ -11,5 +11,9 @@ jobs:
     - name: print
       run: echo ${{env.DOCKER.secrets.REPOSITORY}}
     - name: print
-      run: echo ${{env.secrets.DOCKER.PASSWORD}}
+      run: echo ${{env.DOCKER.env.hi}}
+    - name: print
+      run: echo ${{DOCKER.secrets.REPOSITORY}}
+    - name: print
+      run: echo ${{DOCKER.env.hi}}
     
