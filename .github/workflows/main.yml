@@ -7,7 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    
+    - name: print
+      run: echo ${{env.secrets.DOCKER.REPOSITORY}}
+    - name: print
+      run: echo ${{env.env.DOCKER.hi}}
+    - name: print
+      run: echo ${{env.DOCKER.hi}}
     - name: print
       run: echo ${{env.DOCKER.secrets.REPOSITORY}}
     - name: print
